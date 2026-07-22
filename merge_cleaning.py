@@ -28,9 +28,10 @@ def nettoyer_donnees(df_bis):
 
     # Suppression des offres non pertinentes
     df_bis = df_bis[~df_bis["Titre du poste"].str.lower().str.contains(
-        "téléconseiller|télévendeur|chargé de clientèle|maroquinerie|recouvrement|ambulancier|operateur de câblage|serivce client|
-        ressources humaines|chargé de recrutement|chargé rh|assistant rh|rh"
-        ,na=False)]
+    "téléconseiller|télévendeur|chargé de clientèle|maroquinerie|"
+    "recouvrement|ambulancier|operateur de câblage|service client|"
+    "ressources humaines|chargé de recrutement|chargé rh|assistant rh|rh",
+    na=False)]
 
     df_bis = df_bis.replace(["Autres","Non Spécifié"], "Non spécifié")
 
@@ -92,6 +93,8 @@ def nettoyer_donnees(df_bis):
         "Casablanca/bouskoura": "Bouskoura",
         "Casablanca-nouaceur": "Nouaceur",
         "Casablanca-chefchaouen" : "Casablanca",
+        "Casablanca - maarif": "Casablanca",
+        "Chellalat - mohammédia": "Mohammedia",
         "Technopolis": "Salé",
         "Parc technopolis rabat": "Salé",
         "Taliouine- askaoune": "Taliouine",
