@@ -93,6 +93,7 @@ def nettoyer_donnees(df_bis):
         "Casablanca/bouskoura": "Bouskoura",
         "Casablanca-nouaceur": "Nouaceur",
         "Casablanca-chefchaouen" : "Casablanca",
+        "Dar bouazza" : "Casablanca",
         "Casablanca - maarif": "Casablanca",
         "Chellalat - mohammédia": "Mohammedia",
         "Technopolis": "Salé",
